@@ -1,6 +1,5 @@
 const ALLOWED_ORIGINS = new Set([
-  "https://free4.chat",
-  "https://www.free4.chat",
+  "https://zchat.bfzone.ccwu.cc",
   "http://localhost:3000",
 ])
 
