@@ -37,7 +37,7 @@
     "SFU_APP_ID": "set-during-deployment",
     // Room Apps are an optional host capability; individual curated Apps are
     // supplied by the Lab-owned catalog while trust policy remains core-owned.
-    "ROOM_APPS_ENABLED": "true"
+    "ROOM_APPS_ENABLED": "false"
   },
   "kv_namespaces": [
     {
