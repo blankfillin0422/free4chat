@@ -630,10 +630,15 @@ export default function RoomContent({
   const effectiveLocalParticipantId =
     localParticipantId ?? getLocalRoomAuth()?.participantId
   useEffect(() => {
-  setProductionRoomAppCatalog([])
-  setLoadedRoomAppCatalog([])
-  setRoomAppCatalogLoaded(true)
-}, [])
+    if (process.env.NODE_ENV === "test") return
+    let mounted = true
+    const refreshCatalog = () => {
+      void loadProductionRoomAppCatalog().then((catalog) => {
+        if (!mounted) return
+        setProductionRoomAppCatalog(catalog)
+        setLoadedRoomAppCatalog(catalog)
+        setRoomAppCatalogLoaded(true)
+      })
     }
     refreshCatalog()
     const refreshTimer = window.setInterval(
