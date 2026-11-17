@@ -38,8 +38,7 @@
     // Room Apps are an optional host capability; individual curated Apps are
     // supplied by the Lab-owned catalog while trust policy remains core-owned.
     "ROOM_APPS_ENABLED": "false",
-    "TURNSTILE_DISABLED": "true",
-    "NEXT_PUBLIC_TURNSTILE_SITE_KEY": "1"
+    "TURNSTILE_DISABLED": "true"
   },
   "kv_namespaces": [
     {
