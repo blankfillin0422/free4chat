@@ -19,7 +19,7 @@ export const ROOM_APP_UNICAST_BYTES_PER_SECOND = 64 * 1024
 // not become shared App transport or state.
 export const ROOM_APP_AGENT_REQUEST_TIMEOUT_MS = 15_000
 export const ROOM_APP_AGENT_MAX_IN_FLIGHT = 4
-export const ROOM_APP_TRUSTED_ORIGIN = "https://www.free4.chat"
+export const ROOM_APP_TRUSTED_ORIGIN = "https://room-apps.free4.chat"
 export const ROOM_APP_CATALOG_ENDPOINT = `${ROOM_APP_TRUSTED_ORIGIN}/_catalog.json`
 export const ROOM_APP_CATALOG_MAX_ENTRIES = 32
 export const ROOM_APP_CATALOG_MAX_BYTES = 16 * 1024
